@@ -1,20 +1,14 @@
 set encoding=utf-8
 set nocompatible
 
-if has("win32")
-  let vimfiles='~/vimfiles'
-  source ~/vimfiles/bundles.vim
-else
-  let vimfiles='~/.vim'
-  source ~/.vim/bundles.vim
-endif
+source ~/dotfiles/bundles.vim
 
 syntax on
 colorscheme solarized
 
-set ts=2
-set sts=2
-set sw=2
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 set smartindent
 set backspace=indent,eol,start
@@ -73,6 +67,7 @@ nmap <leader>rc :Rcontroller
 nmap <leader>rm :Rmodel 
 nmap <leader>rv :Rview 
 
+" pretty-print JSON
 function! FormatJSON()
   :%!python -m json.tool
 endfunction
