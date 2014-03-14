@@ -11,6 +11,7 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 set smartindent
+
 set backspace=indent,eol,start
 
 set number
@@ -53,7 +54,7 @@ if has("win32")
   endif
 endif
 
-" Get rid of some unsavory default key bindings
+" Get rid of some default key bindings I don't care for
 nmap K k
 nmap Y y$
 
