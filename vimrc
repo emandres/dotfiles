@@ -4,7 +4,9 @@ set nocompatible
 source ~/dotfiles/bundles.vim
 
 syntax on
+
 colorscheme solarized
+set background=dark
 
 set tabstop=2
 set softtabstop=2
@@ -31,12 +33,18 @@ set listchars=tab:▸\ ,eol:¬
 nmap <leader>l :set list!<CR>
 
 " stop polluting my directories with *.swp files!
-set dir=~/vimfiles/tmp
-set backupdir=~/vimfiles/tmp
+if has("win32")
+  set dir=~/vimfiles/tmp
+  set backupdir=~/vimfiles/tmp
+  set undodir=~/vimfiles/tmp
+else
+  set dir=~/.vim/tmp
+  set backupdir=~/.vim/tmp
+  set undodir=~/.vim/tmp
+endif
 
 " Persistent undo
 set undofile
-set undodir=~/vimfiles/tmp
 
 " No bells
 set vb
