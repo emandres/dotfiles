@@ -1,5 +1,5 @@
-set encoding=utf-8
 set nocompatible
+set encoding=utf-8
 
 source ~/dotfiles/bundles.vim
 
@@ -49,18 +49,6 @@ set undofile
 " No bells
 set vb
 set t_vb=
-
-" GVim settings
-if has("win32")
-	set gfn=Consolas:h10:cANSI
-
-  " Something other than the ridiculous 80x25 default setting.
-  " Uses an if statement so we don't resize the window when sourcing .vimrc
-  " from inside of vim.
-  if &lines < 60 || &columns < 160
-    set lines=60 columns=160
-  endif
-endif
 
 " Get rid of some default key bindings I don't care for
 nmap K k
