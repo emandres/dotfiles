@@ -14,13 +14,19 @@ Bundle 'gmarik/vundle'
 filetype plugin indent on
 
 Bundle 'kien/ctrlp.vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'Raimondi/delimitMate'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
+Bundle 'vim-scripts/wombat'
+Bundle 'vim-scripts/wombat256.vim'
 
 " Clojure
 Bundle 'VimClojure'
