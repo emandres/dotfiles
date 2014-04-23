@@ -1,6 +1,7 @@
 #! /bin/sh
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/gvimrc ~/.gvimrc
+ln -s ~/dotfiles/zshrc ~/.zshrc
 
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/tmp
