@@ -2,6 +2,7 @@
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/gvimrc ~/.gvimrc
 ln -s ~/dotfiles/zshrc ~/.zshrc
+ln -s ~/dotfiles/dir_colors ~/.dir_colors
 
 mkdir -p ~/.vim/bundle
 mkdir -p ~/.vim/tmp

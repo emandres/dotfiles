@@ -13,12 +13,16 @@ Bundle 'gmarik/vundle'
 
 filetype plugin indent on
 
+Bundle 'jgdavey/tslime.vim'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mattn/emmet-vim'
+Bundle 'mattn/webapi-vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
+Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-repeat'
@@ -39,7 +43,5 @@ Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
-
-Bundle 'pangloss/vim-javascript'
 
 Bundle 'altercation/vim-colors-solarized'

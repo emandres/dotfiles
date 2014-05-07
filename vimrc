@@ -30,7 +30,7 @@ nmap <leader>h :set hlsearch!<CR>
 
 " List characters
 set listchars=tab:▸\ ,eol:¬
-nmap <leader>l :set list!<CR>
+"nmap <leader>l :set list!<CR>
 
 " stop polluting my directories with *.swp files!
 if has("win32")
@@ -70,3 +70,8 @@ function! FormatJSON()
 endfunction
 nmap <leader>fj :call FormatJSON()<CR>gg=G
 
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
+map <leader>t :call RunCurrentSpecFile()<CR>
+map <leader>s :call RunNearestSpec()<CR>
+map <leader>l :call RunLastSpec()<CR>
+map <leader>a :call RunAllSpecs()<CR>

@@ -8,4 +8,8 @@ PROMPT="%{$fg[blue]%}%~ %{$fg[green]%}%# %{$reset_color%}"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=screen-256color tmux"
+
+eval `dircolors ~/.dir_colors`
+export EDITOR=vim
+bindkey -e
