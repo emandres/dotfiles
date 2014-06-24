@@ -5,7 +5,8 @@ source ~/dotfiles/bundles.vim
 
 syntax on
 
-colorscheme solarized
+colorscheme molokai
+let g:molokai_original=1
 set background=dark
 
 set tabstop=2

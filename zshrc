@@ -13,3 +13,8 @@ alias tmux="TERM=screen-256color tmux"
 eval `dircolors ~/.dir_colors`
 export EDITOR=vim
 bindkey -e
+
+SCALA_HOME=/usr/local/share/scala-2.11.0
+PATH=$PATH:~/bin:$SCALA_HOME/bin
+
+alias ls='ls --color'

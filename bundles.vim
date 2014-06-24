@@ -23,6 +23,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'thoughtbot/vim-rspec'
+Bundle 'tomasr/molokai'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-repeat'
@@ -33,7 +34,8 @@ Bundle 'vim-scripts/wombat'
 Bundle 'vim-scripts/wombat256.vim'
 
 " Clojure
-Bundle 'VimClojure'
+Bundle 'guns/vim-clojure-static'
+Bundle 'tpope/vim-fireplace'
 
 " Javascript
 Bundle 'pangloss/vim-javascript'
@@ -45,3 +47,6 @@ Bundle 'tpope/vim-rails'
 Bundle 'vim-ruby/vim-ruby'
 
 Bundle 'altercation/vim-colors-solarized'
+
+"Scala
+Bundle 'derekwyatt/vim-scala'
