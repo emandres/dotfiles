@@ -3,12 +3,16 @@
 echo source ~\dotfiles\vimrc > "%HOMEPATH%\_vimrc"
 echo source ~\dotfiles\gvimrc > "%HOMEPATH%\_gvimrc"
 
-set VIMPATH="%HOMEPATH%\vimfiles"
+set VIMPATH="%SYSTEMDRIVE%%HOMEPATH%\vimfiles"
 mkdir "%VIMPATH%"
 mkdir "%VIMPATH%\bundle"
 mkdir "%VIMPATH%\tmp"
 
-xcopy vim\* "%VIMPATH%" /E
+echo %VIMPATH%
+
+rem xcopy vim\* "%VIMPATH%" /E
 
 git clone https://github.com/gmarik/vundle.git "%VIMPATH%\bundle\vundle"
-vim -u bundles.vim +BundleInstall +qall
+
+cd %VIMPATH%
+vim -u "%SYSTEMDRIVE%%HOMEPATH%\dotfiles\bundles.vim" +BundleInstall +qall
