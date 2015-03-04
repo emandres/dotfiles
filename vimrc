@@ -76,3 +76,8 @@ map <leader>t :call RunCurrentSpecFile()<CR>
 map <leader>s :call RunNearestSpec()<CR>
 map <leader>l :call RunLastSpec()<CR>
 map <leader>a :call RunAllSpecs()<CR>
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
+let g:Powerline_symbols = 'fancy'

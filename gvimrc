@@ -1,5 +1,5 @@
 if has("win32")
-  set guifont=Consolas:h10:cANSI
+  set guifont=Powerline_Consolas:h10:cANSI
 
   if &lines < 60 || &columns < 160
     set lines=60 columns=160
@@ -7,3 +7,7 @@ if has("win32")
 endif
 
 set visualbell t_vb=
+
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
