@@ -5,8 +5,7 @@ source ~/dotfiles/bundles.vim
 
 syntax on
 
-colorscheme molokai
-let g:molokai_original=1
+colorscheme solarized
 set background=dark
 
 set tabstop=2
@@ -77,9 +76,5 @@ map <leader>s :call RunNearestSpec()<CR>
 map <leader>l :call RunLastSpec()<CR>
 map <leader>a :call RunAllSpecs()<CR>
 
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-let g:Powerline_symbols = 'fancy'
-
 au BufNew,BufRead *.md set ft=markdown
+au BufNew,BufRead *.fs set fs=fsharp
